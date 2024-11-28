@@ -4,7 +4,11 @@ from datetime import datetime
 import os
 
 print("* Hello This is Authentication_System *")
-x = input("** If you want to add users press y or Y ** ,** if you want to login enter L or l ** and ** if you want to exit enter E or e ** : ")
+x = input("""
+          ** If you want to add users press y or Y ** 
+          ** if you want to login enter L or l ** 
+          ** if you want to exit enter E or e **  
+          """)
 os.system('cls' if os.name == 'nt' else 'clear')
 if x == 'y' or x == 'Y':
     while True:
@@ -189,7 +193,7 @@ if x == 'L' or x=='l':
                 else:
                     print(tabulate(usr, headers=["ID","First name","Last name","Phone","Projects",], tablefmt="grid"))
                 
-                x = input("If you finsh your work and want to exit enter e or E and if you want tontinue press any other key: ")
+                x = input("If you finsh your work and want to exit enter e or E and if you want to continue press any other key: ")
                 if x =='e'or x=='E':
                     os.system('cls' if os.name == 'nt' else 'clear')
                     print("Thank You")
@@ -200,6 +204,9 @@ if x == 'L' or x=='l':
             else:
                 os.system('cls' if os.name == 'nt' else 'clear')
                 print("Invalid Email or Passowrd try again")
-                continue
+                email = input("please enter your email: ")
+                passw = input("please enter your password: ")
+                usr= login.login(email,passw)
+                
     
 
