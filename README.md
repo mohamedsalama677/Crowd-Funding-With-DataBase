@@ -1,4 +1,4 @@
-# Authentication-System Project  
+# Crowd-Funding-With-DataBase  
 
 This project was developed as part of the ITI 9-Month Program Track (AI & ML). Below is a description of the role of each file in the system:
 
